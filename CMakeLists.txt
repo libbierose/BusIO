@@ -19,6 +19,8 @@ pico_sdk_init()
 if (TARGET tinyusb_device)
     add_executable(BusIO
     main.cpp
+    Pico_BusIO_Register.cpp
+    Pico_I2CDevice.cpp
             )
 
     # pull in common dependencies
